@@ -2,35 +2,73 @@
 <head>
     <title>BOOK</title>
     <meta charset="utf-8">
+    <style>
+        nav>div>ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:beige;
+        }
+        nav>div>ul>li a,input{
+            float: left;
+            text-decoration:none;
+            margin: 20px;
+            color:black;
+        }
+        nav>div>ul>li a:hover{
+            text-decoration:none;
+            color: blue;
+        }
+        .columns ul.products li.product {
+            float: none;
+            margin: 0;
+            width: auto;
+            border-top: 2px solid #000;
+            padding: 2em 0;
+            text-align: left;
+            clear: left;
+            overflow: hidden;
+        }        
+
+    </style>
 </head>
 
 <body>
-    <div id="header">
-        <div style="float: left;">About Book</div>
-        <div style="float: left;">Contact us</div>
-        <div style="float: left;">add to cart</div>
-    </div>
-    <div id="content" style="clear: both;">
-        <div id="menu" style="float: left;">
-            <div>
-                历史
-            </div>
-            <div>
-                人文
-            </div>
-            <div>
-                军事
-            </div>
-            <div>
-                历史
-            </div>
-            <div>
-                历史
-            </div>
-            <div>
-                历史
-            </div>
+    <nav>
+        <div id="header" class="navigation">
+            <ul>
+                <li > <a href="www.baidu.com"> About books</a></li>
+                <li > <a href="www.baidu.com"> Contact us</a></li>
+                <li > <a href="www.baidu.com"> Cart</a></li>
+                <li>   <input type="search" placeholder="Search">    </li>
+            </ul>
+        </div>    
+    </nav>
+    <div>
+        <div class="columns">
+            <ul class="products">
+                <li class="product">
+                    book1
+                </li>
+                <li class="product">
+                    book2
+                </li>
+                <li class="product">
+                    book1
+                </li>
+                <li class="product">
+                    book1
+                </li>
+                <li class="product">
+                    book1
+                </li>
 
+            </ul>
+
+        </div>
+    </div>
         </div>
     </div>
 </body>
